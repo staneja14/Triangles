@@ -1,3 +1,9 @@
+"""
+@author: Shivani Taneja
+
+This file contains Python code to test Triangles
+"""
+
 import unittest
 
 from HWAssignments.Triangles import Triangle
