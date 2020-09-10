@@ -6,7 +6,6 @@ from HWAssignments.Triangles import Triangle
 class TestTriangle(unittest.TestCase):
 
     def test_classifyTriangle(self):
-
         result = Triangle.classifyTriangle(1, 1, 1)
         self.assertEqual(result, "Equilateral")
 
@@ -22,9 +21,8 @@ class TestTriangle(unittest.TestCase):
         result5 = Triangle.classifyTriangle(3, 3, 3)
         self.assertEqual(result5, "Equilateral")
 
-
-
-
+        result6 = Triangle.classifyTriangle(3, 4, 5)
+        self.assertEqual(result6, "Right")
 
 
 if __name__ == '__main__':

@@ -27,14 +27,12 @@ def classifyTriangle(a, b, c):
 
     if a == 0 or b == 0 or c == 0:
         result = "Invalid Input"
-    elif a == b == c:
+    elif a == b and b == c and c == a:
         result = "Equilateral"
-    elif a == b or a == c or b == c:
-        result = "Isosceles"
+    elif (a ^ 2) + (b ^ 2) == (c ^ 2):
+        result = "Right"
     elif a != b and a != c and b != c:
         result = "Scalene"
-    elif (a ** 2) + (b ** 2) == (c ** 2):
-        result = "Right"
     else:
-        result = "Please enter the sides of triangle"
+        result = "Isosceles"
     return result
