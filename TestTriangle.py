@@ -22,10 +22,5 @@ class TestTriangle(unittest.TestCase):
         result5 = Triangle.classifyTriangle(3, 3, 3)
         self.assertEqual(result5, "Equilateral")
 
-
-
-
-
-
 if __name__ == '__main__':
     unittest.main()
